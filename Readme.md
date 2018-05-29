@@ -1,8 +1,4 @@
-# How to insert inline pictures using the RichEditDocumentServer
+# How to insert inline pictures using the Word Processing Document API
 
 
-<p>This example demonstrates API methods of the RichEditDocumentServer for inserting inline pictures in a document.</p>
-
-<br/>
-
-
+This example demonstrates how to use the [Word Processing Document API](https://documentation.devexpress.com/OfficeFileAPI/17488/Word-Processing-Document-API) methods to insert inline pictures into a document.
