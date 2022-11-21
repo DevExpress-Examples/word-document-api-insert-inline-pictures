@@ -1,12 +1,12 @@
 Imports System
 Imports System.Diagnostics
-'#Region "#usings"
+#Region "#usings"
 Imports System.IO
 Imports System.Reflection
 Imports DevExpress.XtraRichEdit
 Imports DevExpress.XtraRichEdit.API.Native
 
-'#End Region  ' #usings
+#End Region  ' #usings
 Namespace InlinePictures
 
     Friend Module Program
@@ -16,7 +16,7 @@ Namespace InlinePictures
         ''' </summary>
         <STAThread>
         Sub Main()
-'#Region "#inlinepictures"
+#Region "#inlinepictures"
             Dim server As RichEditDocumentServer = New RichEditDocumentServer()
             server.LoadDocument("Texts\InlinePictures.rtf", DocumentFormat.Rtf)
             Dim doc As Document = server.Document
@@ -42,10 +42,10 @@ Namespace InlinePictures
             barCode.CodeBinaryData = Text.Encoding.Default.GetBytes(barCode.CodeText)
             barCode.Module = 0.5
             Dim docFooter As SubDocument = doc.Sections(0).BeginUpdateFooter()
-            docFooter.Images.Append(barCode.BarCodeImage)
+            docFooter.Images.Append(DocumentImageSource.FromImage(barCode.BarCodeImage))
             doc.Sections(0).EndUpdateFooter(docFooter)
-'#End Region  ' #inlinepictures
-'#Region "#getimages"
+#End Region  ' #inlinepictures
+#Region "#getimages"
             ' Scale down images in the document body.
             Dim images As ReadOnlyDocumentImageCollection = server.Document.Images.Get(doc.Range)
             For i As Integer = 0 To images.Count - 1
@@ -53,7 +53,7 @@ Namespace InlinePictures
                 images(i).ScaleY /= 4
             Next
 
-'#End Region  ' #getimages
+#End Region  ' #getimages
             ' Save the resulting document.
             server.SaveDocument("InlinePictures.docx", DocumentFormat.OpenXml)
             Call Process.Start("InlinePictures.docx")
