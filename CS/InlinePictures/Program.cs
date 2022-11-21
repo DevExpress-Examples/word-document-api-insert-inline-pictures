@@ -47,7 +47,7 @@ namespace InlinePictures {
             barCode.CodeBinaryData = System.Text.Encoding.Default.GetBytes(barCode.CodeText);
             barCode.Module = 0.5;
             SubDocument docFooter = doc.Sections[0].BeginUpdateFooter();
-            docFooter.Images.Append(barCode.BarCodeImage);
+            docFooter.Images.Append(DocumentImageSource.FromImage(barCode.BarCodeImage));
             doc.Sections[0].EndUpdateFooter(docFooter);
             #endregion #inlinepictures
 
