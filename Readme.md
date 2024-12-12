@@ -10,6 +10,9 @@ This example demonstrates how to use the [Word Processing Document API](https://
 
 The [Shape API](https://docs.devexpress.com/OfficeFileAPI/15315/word-processing-document-api/word-processing-document/shapes) subset of Word Processing Document API allows you to insert images from file, stream or URI. Use the [DocumentImageSource](https://docs.devexpress.com/OfficeFileAPI/DevExpress.XtraRichEdit.API.Native.DocumentImageSource) class to define the image source.
 
+> [!Important]  
+> The Universal Subscription or an additional Office File API Subscription is required to use this example in production code. For pricing information, please refer to the [DevExpress Subscription](https://www.devexpress.com/Subscriptions/) page.  
+
 ## Files to Review
 
 * [Program.cs](./CS/InlinePictures/Program.cs) (VB: [Program.vb](./VB/InlinePictures/Program.vb))
