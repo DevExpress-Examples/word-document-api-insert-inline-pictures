@@ -15,7 +15,7 @@ The [Shape API](https://docs.devexpress.com/OfficeFileAPI/15315/word-processing-
 
 ## Files to Review
 
-* [Program.cs](./CS/InlinePictures/Program.cs) (VB: [Program.vb](./VB/InlinePictures/Program.vb))
+* [Program.cs](./CS/Program.cs) (VB: [Program.vb](./VB/Program.vb))
 
 ## Documentation
 

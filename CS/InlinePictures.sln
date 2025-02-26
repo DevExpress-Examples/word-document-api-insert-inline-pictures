@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InlinePictures", "InlinePictures\InlinePictures.csproj", "{B5F88DAC-01B1-42D8-A901-E7FAB4D1AB05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InlinePictures", "InlinePictures.csproj", "{B5F88DAC-01B1-42D8-A901-E7FAB4D1AB05}"
 	ProjectSection(WebsiteProperties) = preProject
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.Debug = "False"

@@ -8,13 +8,12 @@ using DevExpress.XtraRichEdit.API.Native;
 
 namespace InlinePictures
 {
-    static class Program
+    class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             using (RichEditDocumentServer wordProcessor = new RichEditDocumentServer())
             {
@@ -31,8 +30,8 @@ namespace InlinePictures
                 pos = document.Paragraphs[4].Range.Start;
                 string imageToInsert = "information.png";
                 Assembly a = Assembly.GetExecutingAssembly();
-                Stream imageStream = a.GetManifestResourceStream("InlinePictures.Resources." + imageToInsert);
-               Shape imageFromStream =  document.Shapes.InsertPicture(pos, DocumentImageSource.FromStream(imageStream));
+                Stream imageStream = a.GetManifestResourceStream("Resources." + imageToInsert);
+                Shape imageFromStream =  document.Shapes.InsertPicture(pos, DocumentImageSource.FromStream(imageStream));
                 imageFromStream.TextWrapping = TextWrappingType.InLineWithText;
 
                 // Insert an image using its URI.
@@ -44,7 +43,13 @@ namespace InlinePictures
                 // Save the resulting document.
                 wordProcessor.SaveDocument("InlinePictures.docx", DocumentFormat.OpenXml);
             }
-                Process.Start("InlinePictures.docx");
+
+            var p = new Process();
+            p.StartInfo = new ProcessStartInfo(@"InlinePictures.docx")
+            {
+                UseShellExecute = true
+            };
+            p.Start();
         }
     }
 }

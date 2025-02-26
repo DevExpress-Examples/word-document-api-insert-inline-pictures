@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <RootNamespace></RootNamespace>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Update="Texts\InlinePictures.rtf">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="Pictures\ReadersChoice.png">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <EmbeddedResource Include="Resources\information.png">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </EmbeddedResource>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="DevExpress.Document.Processor" Version="24.2.*" />
+	    <PackageReference Include="DevExpress.RichEdit.Core" Version="24.2.*" />
+    </ItemGroup>
+</Project>
