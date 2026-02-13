@@ -25,7 +25,7 @@ The [Shape API](https://docs.devexpress.com/OfficeFileAPI/15315/word-processing-
 
 * [Word Processing Document API – How to Process Word Documents in Code](https://github.com/DevExpress-Examples/word-document-api-examples)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=word-document-api-insert-inline-pictures&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=word-document-api-insert-inline-pictures&~~~was_helpful=no)
 
