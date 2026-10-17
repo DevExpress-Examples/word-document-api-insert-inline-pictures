@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
 	    <RootNamespace></RootNamespace>
         <OutputType>Exe</OutputType>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -19,7 +19,7 @@
         </EmbeddedResource>
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="DevExpress.Document.Processor" Version="24.2.*" />
-	    <PackageReference Include="DevExpress.RichEdit.Core" Version="24.2.*" />
+        <PackageReference Include="DevExpress.Document.Processor" Version="26.1.*" />
+	    <PackageReference Include="DevExpress.RichEdit.Core" Version="26.1.*" />
     </ItemGroup>
 </Project>
